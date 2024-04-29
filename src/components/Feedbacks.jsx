@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import {  certificates } from "../constants";
+import { certificates } from "../constants";
 
 
 
 const Feedbacks = () => {
- 
+
 
   const tableRowStyle = {
     borderBottom: "1px solid #dddddd",
@@ -20,27 +20,32 @@ const Feedbacks = () => {
 
   };
   function visitLink(googleDriveLink) {
-    window.location.href = googleDriveLink;
+    window.open(googleDriveLink, "_blank");
   }
-  
-  
+  const headerstyle={
+    color:"#eeeeee",
+    fontSize:"150%",
+    marginRight:"5%",
+  }
+
+
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[250]`}
       >
         <motion.div variants={textVariant()}>
-          <h2 className={styles.sectionHeadText}>CERTIFICATES.</h2>
+          <h2 className={styles.sectionHeadText}>CERTIFICATES</h2>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
         <div>
-          <table style={{ width: "100%", borderCollapse: "collapse",marginTop:"20%" }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "20%" }}>
             <thead>
               <tr >
-                <th >Certificate Name</th>
-                <th >Issuing Organization</th>
-                <th >Check Certificate</th>
+                <th style={headerstyle} >Certificate Name</th>
+                <th style={headerstyle} >Issuing Organization</th>
+                <th style={headerstyle}>Check Certificate</th>
               </tr>
             </thead>
             <tbody>

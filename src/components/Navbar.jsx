@@ -24,6 +24,9 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const imageS={
+    borderRaduis:"5%",
+  }
 
   return (
     <nav
@@ -42,7 +45,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-12 h-12 object-contain' />
+          <img src={logo} alt='logo' className='w-12 h-12 object-contain' style={imageS} />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Oussama &nbsp;
             <span className='sm:block hidden'> | National School of Electronics and Telecoms of Sfax </span>

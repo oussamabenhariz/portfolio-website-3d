@@ -1,7 +1,5 @@
 import logo from "./oussema.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
+
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -19,7 +17,6 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import tekru from "./company/tekru.png";
 import edus from "./company/edus.png";
 import mst from "./company/mst.png";
@@ -37,6 +34,7 @@ import mysql from "./tech/mysql.png";
 import ml from "./ml.png";
 import dl from "./dl.png";
 import nlp from "./nlp.png";
+import linkedin from "./linkedin.png"
 export {
   logo,
   web,
@@ -71,4 +69,5 @@ export {
   tekru,
   edus,
   mst,
+  linkedin
 };

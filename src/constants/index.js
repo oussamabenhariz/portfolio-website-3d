@@ -3,6 +3,7 @@ import {
   web,
   javascript,
   html,
+  github,
   css,
   reactjs,
   mongodb,
@@ -140,23 +141,33 @@ const experiences = [
       "Ensure the security and performance of the server using such techniques as clustering ,authentication and authorization.",
     ],
   },
-  // {
-  //   title: "Data Scientist",
-  //   company_name: "Measurements and Sensors Technology",
-  //   icon: mst,
-  //   iconBg: "#383E56",
-  //   date: "Feb 2024 - Jan 2024",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+   {
+    title: "Data Scientist",
+  company_name: "Measurements and Sensors Technology",
+  icon: mst,
+  iconBg: "#383E56",
+  date: "Feb 2024 - Jan 2024",
+     points: [
+       "develop an automated data processing  pipeline for electrical impedance tomography",
+
+   ],
+  },
 
   
 ];
 const certificates=[
+  {
+    name:"Tensorflow Developer Certificate",
+    certifProvider:"Tensorflow (Google)",
+    pdfName:"https://drive.google.com/file/d/1t-m9Y1DBMxTD6DZH8mesUQo-5xBbUcTq/view?usp=sharing",
+
+  },
+  {
+    name:"Natural Language Processing Specialization",
+    certifProvider:"DeepLearning.AI (Coursera)",
+    pdfName:"https://drive.google.com/file/d/1IO9H2tN0-ZZuJ4jNzbtTJlNRkfEzVy7e/view?usp=sharing",
+
+  },
   {
     name:"Machine Learning Specialization",
     certifProvider:"DeepLearning.AI (Coursera)",
@@ -259,6 +270,46 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/oussamabenhariz/ActionDetectionWithTensorflowAndMediapipe.git",
+  },
+  {
+    name: "Image Captioning",
+    description:"implement an image captioning system using deep learning techniques. It utilizes a pre-trained VGG16 model to extract features from images and an LSTM-based neural network to generate captions. The Flickr8k dataset is employed for training and testing the model. The process involves data preprocessing, including cleaning and tokenizing captions, and training the model using Keras. Performance evaluation is done using BLEU scores. Additionally, functions are provided to generate captions for sample images and predict captions for new images using the trained model.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TensorFlow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "VGG16",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/oussamabenhariz/Image_captioning.git",
+  },
+  {
+    name: "Lip Reading",
+    description:"Built a deep learning model for lip reading using CNNs and LSTMs. It loads video data along with corresponding text alignments, preprocesses them, and constructs a data pipeline. The model architecture includes convolutional and recurrent layers. Training options such as custom loss function and learning rate scheduler are defined, and the model is trained. Predictions are made on test data, and the model's performance is evaluated. Finally, the model is tested on a video sample, and predictions are compared with actual text alignments.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TensorFlow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Lipnet",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/oussamabenhariz/Lipnet.git",
   },
 ];
 

@@ -6,7 +6,11 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import {
 
+  github,
+ linkedin,
+} from "../assets"
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -129,6 +133,23 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+
+    <footer>
+      <div className="footer-content">
+        <p>Connect with me:</p>
+        <div className="social-links">
+          <a href="https://github.com/oussamabenhariz" target="_blank" rel="noopener noreferrer">
+            <img src={github} alt="GitHub" className='w-12 h-12 object-contain' />
+          </a>
+          <a href="https://www.linkedin.com/in/oussama-ben-hariz/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} className='w-12 h-12 object-contain' alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
     </div>
   );
 };
