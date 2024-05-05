@@ -40,28 +40,29 @@ const Feedbacks = () => {
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
         <div>
-          <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "20%" }}>
-            <thead>
-              <tr >
-                <th style={headerstyle} >Certificate Name</th>
-                <th style={headerstyle} >Issuing Organization</th>
-                <th style={headerstyle}>Check Certificate</th>
-              </tr>
-            </thead>
-            <tbody>
-              {certificates.map((certificate, index) => (
-                <tr key={index} style={tableRowStyle}>
-                  <td className="columnTable" style={tableCellStyle}>{certificate.name}</td>
-                  <td className="columnTable" style={tableCellStyle}>{certificate.certifProvider}</td>
-                  <td style={tableCellStyle}>
-                    <button onClick={() => visitLink(certificate.pdfName)}>
-                      View PDF file
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "20%" }}>
+  <thead>
+    <tr>
+      <th style={headerstyle}>Certificate Name</th>
+      <th style={headerstyle}>Issuing Organization</th>
+      <th style={{...headerstyle, paddingLeft: "50px"}}>Check Certificate</th>
+    </tr>
+  </thead>
+  <tbody>
+    {certificates.map((certificate, index) => (
+      <tr key={index} style={tableRowStyle}>
+        <td className="columnTable" style={{ ...tableCellStyle, paddingRight: "20px" }}>{certificate.name}</td>
+        <td className="columnTable" style={{ ...tableCellStyle, paddingRight: "100px" }}>{certificate.certifProvider}</td>
+        <td style={tableCellStyle}>
+          <button onClick={() => visitLink(certificate.pdfName)}>
+            View PDF file
+          </button>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
         </div>
       </div>
     </div>

@@ -137,13 +137,13 @@ const Contact = () => {
 
     <footer>
       <div className="footer-content">
-        <p>Connect with me:</p>
+        <p>Platforms : </p>
         <div className="social-links">
           <a href="https://github.com/oussamabenhariz" target="_blank" rel="noopener noreferrer">
-            <img src={github} alt="GitHub" className='w-12 h-12 object-contain' />
+            <img src={github} alt="GitHub" className='w-12 h-12 m-5 object-contain' />
           </a>
           <a href="https://www.linkedin.com/in/oussama-ben-hariz/" target="_blank" rel="noopener noreferrer">
-            <img src={linkedin} className='w-12 h-12 object-contain' alt="LinkedIn" />
+            <img src={linkedin} className='w-12 h-12 m-5 object-contain' alt="LinkedIn" />
           </a>
         </div>
       </div>
